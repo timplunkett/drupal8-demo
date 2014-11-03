@@ -4,5 +4,5 @@ services:
     arguments: ['@demo.user_repository']
 
   demo.user_repository:
-    class: 'Drupal\demo\User\UserRepository'
+    class: 'Drupal\demo\User\Repository\DrupalUserRepository'
     arguments: ['@entity.query']
