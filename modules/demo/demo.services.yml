@@ -1,0 +1,8 @@
+services:
+  demo.controller:
+    class: 'Drupal\demo\Controller\DemoController'
+    arguments: ['@demo.user_repository']
+
+  demo.user_repository:
+    class: 'Drupal\demo\User\UserRepository'
+    arguments: ['@entity.query']
